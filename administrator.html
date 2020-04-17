@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Admin Panel</title>
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header container">
+		<nav>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">CATEGORY</a></li>
+				<li><a href="#">CONTACT US</a></li>
+			</ul>
+		</nav>
+		
+		<div class="header-func">
+			<div class="search">
+				<label for="site-search"></label>
+				<input type="search" class="site-search" id="site-search">
+				<i class="fas fa-search search-icon"></i>
+			</div>
+			<button class="btn sign-in-btn" id="signIn">SIGN IN</button>
+			<div class="shopping-bag">
+				<i class="fas fa-shopping-bag "></i>
+			</div>
+		</div>
+	</header>
+	<section class="admin-form container">
+		<form action="">
+			<label for="productName" class="product-label">Name:</label>
+			<input type="text" id='productName' class="product-input">
+			<label for="productPrice" class="product-label">Price:</label>
+			<input type="text" id='productPrice' class="product-input">
+			<label for="productPicture" class="product-label">Picture:</label>
+			<input type="text" id='productPicture' class="product-input">
+			<label for="productHover" class="product-label">Hover Picture:</label>
+			<input type="text" id='productHover' class="product-input">
+			<br>
+			<button  class="btn add-product-btn">Add Product</button>
+		</form>
+		<div class="products container">
+			
+		</div>
+	</section>
+	<script type="text/javascript" src='js/administrator.js'></script>
+</body>
+</html>
